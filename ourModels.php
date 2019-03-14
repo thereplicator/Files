@@ -108,7 +108,16 @@
       </div>
     </div>
 
+    <?php
+        $hostname = "localhost";
+        $username = "root";
+        $password = "";
+        $databaseName = "testing";
 
+        $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+        $query = "SELECT * FROM testing1";
+        $result = mysqli_query($connect, $query);
+    ?>
 
     <div class="limiter">
 		<div style = "background: #eaeaea"class="container-table100">
@@ -124,90 +133,14 @@
 							</tr>
 						</thead>
 						<tbody>
-								<tr>
-									<td class="column1">2017-09-29 01:22</td>
-									<td class="column2">200398</td>
-									<td class="column3">iPhone X 64Gb Grey</td>
+              <?php while($row1 = mysqli_fetch_array($result)):;?>
+		              <tr>
+			                 <td><?php echo $row1[0];?></td>
+			                 <td><?php echo $row1[1];?></td>
+			                 <td><?php echo $row1[2];?></td>
+		             </tr>
+		          <?php endwhile;?>
 
-								</tr>
-								<tr>
-									<td class="column1">2017-09-28 05:57</td>
-									<td class="column2">200397</td>
-									<td class="column3">Samsung S8 Black</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-26 05:57</td>
-									<td class="column2">200396</td>
-									<td class="column3">Game Console Controller</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-25 23:06</td>
-									<td class="column2">200392</td>
-									<td class="column3">USB 3.0 Cable</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-24 05:57</td>
-									<td class="column2">200391</td>
-									<td class="column3">Smartwatch 4.0 LTE Wifi</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-23 05:57</td>
-									<td class="column2">200390</td>
-									<td class="column3">Camera C430W 4k</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-22 05:57</td>
-									<td class="column2">200389</td>
-									<td class="column3">Macbook Pro Retina 2017</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-21 05:57</td>
-									<td class="column2">200388</td>
-									<td class="column3">Game Console Controller</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-19 05:57</td>
-									<td class="column2">200387</td>
-									<td class="column3">iPhone X 64Gb Grey</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-18 05:57</td>
-									<td class="column2">200386</td>
-									<td class="column3">iPhone X 64Gb Grey</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-22 05:57</td>
-									<td class="column2">200389</td>
-									<td class="column3">Macbook Pro Retina 2017</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-21 05:57</td>
-									<td class="column2">200388</td>
-									<td class="column3">Game Console Controller</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-19 05:57</td>
-									<td class="column2">200387</td>
-									<td class="column3">iPhone X 64Gb Grey</td>
-
-								</tr>
-								<tr>
-									<td class="column1">2017-09-18 05:57</td>
-									<td class="column2">200386</td>
-									<td class="column3">iPhone X 64Gb Grey</td>
-
-								</tr>
 
 						</tbody>
 					</table>
