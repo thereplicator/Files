@@ -219,23 +219,24 @@
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">1</span>
               <h2 class="h5 text-uppercase">You must have an account</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit explicabo quos fugit vitae dolorum.</p>
+              <p>In order to add the models of your choice, you will have to sign up first.Make sure to go to the <a href = "signup.php">Sign up page</a> and do that! Also make sure you downloaded <a href="https://dist.dagoma3d.com/" target="_blank"> Cura By dagoma</a> to transform the 3D files into applicable gcode files. </p>
             </div>
           </div>
 
           <div class="col-md-4 col-lg-4">
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">2</span>
-              <h2 class="h5 text-uppercase">The file you upload must have an .stl extension</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit explicabo quos fugit vitae dolorum.</p>
+              <h2 class="h5 text-uppercase">The file you upload must have an .gcode extension</h2>
+              <p> For the printer to print your models, the file uploaded has to be a Gcode file. Otherwise, the printer won't read your file. In other words, it's the 3D printer universal language! </p>
             </div>
           </div>
+		  
 
           <div class="col-md-4 col-lg-4">
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">3</span>
-              <h2 class="h5 text-uppercase">The file you upload must not be already in the database</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reprehenderit explicabo quos fugit vitae dolorum.</p>
+              <h2 class="h5 text-uppercase">Make sure your file is not already there </h2>
+              <p> To check the list of available models, please go to the <a href="ourModels.php"> "Available Models" </a>section. You have to make sure your file is not there! After that, you can finally upload your file there and enjoy a universe of 3D printed models</p>
             </div>
           </div>
 
