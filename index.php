@@ -126,9 +126,9 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-7">
-            <p>It is almost impossible to believe what technology has achieved so far. Starting with the microphone invention in the 19th century, reaching to Smartphones and Virtual reality nowadays. We really made a huge leap! Our real concern here, in "The Replicator", is the next level. Great technologies had really impacted our lives...One of which is the 3D printing technology. Yet, we decided to make it more elegant and user-friendly using Alexa!You can now access stored models and 3D print them with the use of a raspberry pi. 
+            <p>It is almost impossible to believe what technology has achieved so far. Starting with the microphone invention in the 19th century, reaching to Smartphones and Virtual reality nowadays. We really made a huge leap! Our real concern here, in "The Replicator", is the next level. Great technologies had really impacted our lives...One of which is the 3D printing technology. Yet, we decided to make it more elegant and user-friendly using Alexa!You can now access stored models and 3D print them with the use of a raspberry pi.
 			In case you want to add a certain 3D model of your choice, you can sign up here, add your specified models,and proceed with the printing. To upload your models, Please check <a href ="#modelGuide"> the following guidelines for a detailed walkthrough. </a> </p>
-            
+
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@
       </div>
     </div>
 
-		
+
     <div class="site-section">
       <div class="container" >
         <div class="row">
@@ -208,7 +208,7 @@
 
 
     <div class="site-section"id ="modelGuide">
-      <div class="container" > 
+      <div class="container" >
         <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
             <h2 class="mb-5 text-uppercase">Guidelines For Model Upload</h2>
@@ -230,13 +230,13 @@
               <p> For the printer to print your models, the file uploaded has to be a Gcode file. Otherwise, the printer won't read your file. In other words, it's the 3D printer universal language! </p>
             </div>
           </div>
-		  
+
 
           <div class="col-md-4 col-lg-4">
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">3</span>
               <h2 class="h5 text-uppercase">Make sure your file is not already there </h2>
-              <p> To check the list of available models, please go to the <a href="ourModels.php"> "Available Models" </a>section. You have to make sure your file is not there! After that, you can finally upload your file there and enjoy a universe of 3D printed models</p>
+              <p> To check the list of available models, please go to the <a href="ourModels.php"> "Available Models" </a>section. You have to make sure your file is not there! After that, you can finally upload your files and enjoy a universe of 3D printed models!</p>
             </div>
           </div>
 
