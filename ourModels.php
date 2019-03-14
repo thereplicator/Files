@@ -124,6 +124,19 @@
 							</tr>
 						</thead>
 						<tbody>
+            <?php
+              $fileArray;
+              for($i = 0 ; $i < $fileArray.length ; $i++){
+                
+              ?>
+              <tr>
+                <td class="column1"><?= ?></td>
+                <td class="column2"><?= ?></td>
+                <td class="column3"><?= ?></td>
+              </tr>
+            <?php
+              }
+            ?> 
 								<tr>
 									<td class="column1">2017-09-29 01:22</td>
 									<td class="column2">200398</td>
