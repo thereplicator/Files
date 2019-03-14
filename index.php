@@ -236,7 +236,7 @@
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">3</span>
               <h2 class="h5 text-uppercase">Make sure your file is not already there </h2>
-              <p> To check the list of available models, please go to the <a href="ourModels.php"> "Available Models" </a>section. You have to make sure your file is not there! After that, you can finally upload your files there and enjoy a universe of 3D printed models!</p>
+              <p> To check the list of available models, please go to the <a href="ourModels.php"> "Available Models" </a>section. You have to make sure your file is not there! After that, you can finally upload your files and enjoy a universe of 3D printed models!</p>
             </div>
           </div>
 
