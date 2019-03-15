@@ -139,8 +139,8 @@ Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most po
            <div class="col-md-5 col-lg-5 mr-auto order-md-1">
              <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Start The <div style="text-align:center;"> Replicator.</div></span> </h2> <br>
              <ul>
-               <li style="list-style-type:disc; padding:0;">To start the replicator skill, you have to call on Alexa "Alexa, open the replicator !"</li>
-               <li style="list-style-type:disc;padding:0;">In order to know what you can print, you can issue one of these commands with Alexa</li>
+               <li style="list-style-type:disc; ">To start the replicator skill, you have to call on Alexa "Alexa, open the replicator !"</li>
+               <li style="list-style-type:disc;">In order to know what you can print, you can issue one of these commands with Alexa</li>
                   <ul style = "margin-left: 50px">
                     <li style="list-style-type:circle;"> "Name me a few three dimentional models you can print"</li>
                     <li style="list-style-type:circle;"> "Name me a few three dimentional models I can print"</li>
@@ -149,8 +149,10 @@ Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most po
                     <li style="list-style-type:circle;"> "Name me a few models you have"</li>
                     </ul>
 
-               <li style="list-style-type:disc;"></li>
-
+               <li style="list-style-type:disc;">In order to know if you can print a certain model, you can issue one of these commands </li>
+                  <ul style = "margin-left: 50px">
+                    <li></li>
+                  </ul>
              </ul>
 
            </div>
