@@ -266,7 +266,7 @@
               <div class="col-md-6">
                 <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="#">Venue</a></li>
                     <li><a href="#">Sponsors</a></li>
                     <li><a href="#">Get Ticket</a></li>
