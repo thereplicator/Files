@@ -110,46 +110,68 @@
     </div>
 
 
+
+    <div class="site-section pb-0">
+       <div class="container">
+
+         <div class="row">
+           <div class="col-md-6 col-lg-6 mb-4" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/__lAYgAYvgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+           <div class="col-md-5 col-lg-5 ml-auto">
+             <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Meet  Echo</span><div style="text-align:center;">
+
+               Dot.</div></h2>
+             <p>The <a href="https://www.the-ambient.com/reviews/amazon-echo-dot-review-196">Echo Dot</a> has - far and away - been the most popular Echo device that Amazon has sold. The company has naturally noticed, but it hasn't given the Dot a full upgrade in a while.
+
+Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most popular Echo device. What's new, and when can you get it? That's what we're here for.</p>
+           </div>
+
+         </div>
+       </div>
+     </div>
+
+     <div class="site-section">
+       <div class="container">
+
+         <div class="row align-items-center">
+           <div class="col-md-6 col-lg-6 mb-4 order-md-2">
+             <img src="images/img_2.jpg" alt="Image" class="img-fluid">
+           </div>
+           <div class="col-md-5 col-lg-5 mr-auto order-md-1">
+             <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Innovate</span> </h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio molestiae fuga modi delectus? Soluta consequuntur esse, fugit ratione. Nobis deserunt, suscipit ut similique animi tempora. Tempore quaerat autem nihil, accusantium.</p>
+
+           </div>
+
+         </div>
+       </div>
+     </div>
+
+<!--
     <div class="Launch" style="width:80%; margin:0 auto;">
-      <strong style="font-size:200%">Getting Known to Alexa</strong>
+      <strong style="font-size:200%">Getting Known to Alexa</strong><br />
       <p>The <a href = "https://www.the-ambient.com/reviews/amazon-echo-dot-review-196">Echo Dot</a> has - far and away - been the most popular Echo device that Amazon has sold.
-        This video illustrates Amazon's echo dot and its capabilities.<hr noshade />  </p>
+        This video illustrates Amazon's echo dot and its capabilities.<br /><br />  </p>
       <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/__lAYgAYvgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </p>
-    </div>
-
-    <!-- <div class="limiter">
-		<div style = "background: #eaeaea"class="container-table100">
-			<div class="wrap-table100">
-				<div class="table100">
-					<table>
-						<thead>
-							<tr style = "Background : #222"class="table100-head">
-								<th class="column1">Name</th>
-								<th class="column2">STL</th>
-								<th class="column3">Number of Prints</th>
-
-							</tr>
-						</thead>
-						<tbody>
+    </div> -->
 
 
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div> -->
+
+
+
+
 
 
       <footer class="site-footer" style="background-image: url('images/baner.jpg');">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <h3 class="footer-heading mb-4 text-white">About</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
-              <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+              <h3 class="footer-heading mb-4 text-white">Replicator</h3>
+              <p><i>We create new  possibilities for a world full of possibilities!</i></p>
+              <p><a href="index.php#aboutInfo" class="btn btn-primary pill text-white px-4">Read More</a></p>
             </div>
             <div class="col-md-6">
               <div class="row">
