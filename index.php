@@ -276,9 +276,9 @@
               <div class="col-md-6">
                 <h3 class="footer-heading mb-4 text-white">&nbsp;</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Event</a></li>
-                    <li><a href="#">Be a Sponsor</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
                   </ul>
               </div>
             </div>
