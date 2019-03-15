@@ -59,6 +59,7 @@
                          <a href="index.php">Home</a>
                        </li>
                        <li><a href="ourModels.php">Available Models</a></li>
+                      <li><a href="Alexa.php">Communicate With Alexa!</a></li>
                        <li class="active"><a href="signup.php">Create An Account</a>
                        </li>
                        <li>
