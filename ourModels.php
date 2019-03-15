@@ -62,6 +62,7 @@
                       </li>
                       <li class="active"><a href="ourModels.php">Available Models</a></li>
                       <li><a href="signup.php">Create An Account</a></li>
+                        <li><a href="Alexa.php">Communicate With Alexa!</a></li>
                       <li>
                         <form action="#" class="p-5 bg-white">
 
