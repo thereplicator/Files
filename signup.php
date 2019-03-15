@@ -173,22 +173,15 @@
                 <div class="row">
                   <div class="col-md-6">
                     <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
-                      <ul class="list-unstyled">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Venue</a></li>
-                        <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">Get Ticket</a></li>
-                        <li><a href="#">News</a></li>
-                      </ul>
+                    <ul class="list-unstyled">
+                      <li><a href="index.php">Home</a></li>
+                      <li><a href="ourModels.php">Available Models</a></li>
+                      <li><a href="signup.php">Create An Account</a></li>
+                      <li><a href="#">Communicating With Alexa</a></li>
+                      <li><a href="#Founders">Meet The Founders!</a></li>
+                    </ul>
                   </div>
-                  <div class="col-md-6">
-                    <h3 class="footer-heading mb-4 text-white">&nbsp;</h3>
-                      <ul class="list-unstyled">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Be a Sponsor</a></li>
-                      </ul>
-                  </div>
+
                 </div>
               </div>
             </div>
