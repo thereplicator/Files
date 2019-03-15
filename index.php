@@ -142,7 +142,7 @@
     </div>
 
 
-    <div class="site-section">
+    <div class="site-section" id = "Founders">
       <div class="container" >
         <div class="row">
           <div class="col-md-6 mx-auto text-center mb-5 section-heading">
@@ -267,10 +267,10 @@
                 <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
                   <ul class="list-unstyled">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="#">Venue</a></li>
-                    <li><a href="#">Sponsors</a></li>
-                    <li><a href="#">Get Ticket</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="ourModels.php">Available Models</a></li>
+                    <li><a href="signup.php">Create An Account</a></li>
+                    <li><a href="#">Communicating With Alexa</a></li>
+                    <li><a href="#Founders">Meet The Founders!</a></li>
                   </ul>
               </div>
               <div class="col-md-6">
