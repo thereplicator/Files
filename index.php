@@ -219,7 +219,7 @@
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">1</span>
               <h2 class="h5 text-uppercase">You must have an account</h2>
-              <p>In order to add the models of your choice, you will have to sign up first. Make sure to go to the <a href = "signup.php">Sign up page</a> and do that! Also make sure you slice the 3D files into applicable gcode files. You can do that using any 3D Model Slicer such as <a href="https://ultimaker.com/en/products/ultimaker-cura-software"> Cura</a></p>
+              <p>In order to add the models of your choice, you will have to sign up first. Make sure to go to the <a href = "signup.php">Sign up page</a> and do that! Also make sure you slice the 3D files into applicable gcode files. You can do that using any 3D Model Slicer such as <a href="https://ultimaker.com/en/products/ultimaker-cura-software "  target="_blank"> Cura</a></p>
             </div>
           </div>
 
