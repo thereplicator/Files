@@ -226,13 +226,10 @@
           <div class="col-md-4 col-lg-4">
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">2</span>
-<<<<<<< HEAD
-              <h2 class="h5 text-uppercase">The file you upload must have a .gcode extension</h2>
-              <p> For the printer to print your models, the file uploaded has to be a Gcode file. Otherwise, the printer won't read your file. In other words, it's the 3D printer universal language! </p>
-=======
+
               <h2 class="h5 text-uppercase">The file you upload must have an .gcode extension</h2>
               <p> For the 3D printer to print your models, the file uploaded has to be a Gcode file. Otherwise, the printer won't read your file. In other words, it's the 3D printer universal language! </p>
->>>>>>> AboutSection
+
             </div>
           </div>
 
