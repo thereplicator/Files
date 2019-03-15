@@ -113,8 +113,10 @@
     <div class="Launch">
       <strong>Getting Known to Alexa</strong>
       <p>The <a href = "https://www.the-ambient.com/reviews/amazon-echo-dot-review-196">Echo Dot</a> has - far and away - been the most popular Echo device that Amazon has sold.
-        This video illustrates Amazon's echo dot and its capabilities.  </p>
+        This video illustrates Amazon's echo dot and its capabilities.<hr />  </p>
+      <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/__lAYgAYvgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
     </div>
 
     <!-- <div class="limiter">
