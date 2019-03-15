@@ -110,7 +110,7 @@
     </div>
 
 
-    <div class="Launch" style="width:80%; margin:0 auto;">
+    <div class="row" style="width:80%; margin:0 auto;">
       <strong style="font-size:200%">Getting Known to Alexa</strong>
       <p>The <a href = "https://www.the-ambient.com/reviews/amazon-echo-dot-review-196">Echo Dot</a> has - far and away - been the most popular Echo device that Amazon has sold.
         This video illustrates Amazon's echo dot and its capabilities.<hr noshade />  </p>
