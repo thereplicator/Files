@@ -103,14 +103,14 @@
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-10 text-center" data-aos="fade">
-            <h1 class="mb-4">Available Models</h1>
+            <h1 class="mb-4">Communicate With Alexa!</h1>
           </div>
         </div>
       </div>
     </div>
 
 
-    <div class="limiter">
+    <!-- <div class="limiter">
 		<div style = "background: #eaeaea"class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
@@ -131,7 +131,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
       <footer class="site-footer" style="background-image: url('images/baner.jpg');">
