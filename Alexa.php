@@ -139,8 +139,8 @@ Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most po
              <img src="images/img_2.jpg" alt="Image" class="img-fluid">
            </div>
            <div class="col-md-5 col-lg-5 mr-auto order-md-1">
-             <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Innovate</span> </h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio molestiae fuga modi delectus? Soluta consequuntur esse, fugit ratione. Nobis deserunt, suscipit ut similique animi tempora. Tempore quaerat autem nihil, accusantium.</p>
+             <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Start The <div style="text-align:center;"> Replicator.</div></span> </h2>
+             <p></p>
 
            </div>
 
