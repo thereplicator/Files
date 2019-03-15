@@ -117,7 +117,7 @@
 
 
 
-    <div class="site-section">
+    <div class="site-section"  id = "aboutInfo">
       <div class="container">
         <div class="row">
           <div class="col-md-7 mx-auto text-left section-heading">
@@ -255,9 +255,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h3 class="footer-heading mb-4 text-white">About</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quos rem ullam, placeat amet.</p>
-            <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+            <h3 class="footer-heading mb-4 text-white">Replicator</h3>
+            <p><i>We create new  possibilities for a world full of possibilities!</i></p>
+            <p><a href="#aboutInfo" class="btn btn-primary pill text-white px-4">Read More</a></p>
           </div>
           <div class="col-md-6">
             <div class="row">
