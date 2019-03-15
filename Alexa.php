@@ -119,9 +119,7 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/__lAYgAYvgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            </div>
            <div class="col-md-5 col-lg-5 ml-auto">
-             <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Meet  Echo</span><div style="text-align:center;">
-
-               Dot.</div></h2>
+             <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Meet  Echo</span><div style="text-align:center;"> Dot.</div></h2>
              <p>The <a href="https://www.the-ambient.com/reviews/amazon-echo-dot-review-196">Echo Dot</a> has - far and away - been the most popular Echo device that Amazon has sold. The company has naturally noticed, but it hasn't given the Dot a full upgrade in a while.
 
 Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most popular Echo device. What's new, and when can you get it? That's what we're here for.</p>
