@@ -27,13 +27,15 @@
   $pwd = $_POST["pwd"];
   echo $pwd;
 
-  $sql = 'INSERT INTO users (FirstName , LastName , Email, pwd)
-          VALUES ('. $first. ',
-          ' . $last . ',
-          ' . $email. ',
-          ' . $pwd. ');
-          ';
+  $sql = "INSERT INTO users (FirstName , LastName , Email, pwd)
+          VALUES (\'" . $first. "\',
+          \'" . $last . "\',
+          \'" . $email. "\',
+          \'" . $pwd. "\');
+          ";
 
+
+  echo $sql;
   // $sql = "INSERT INTO users (FirstName, LastName, Email, pwd)
   // VALUES ('Hadi', 'Haidar', 'blabla@test.net', '1234abd@');";
   $getResults= sqlsrv_query($conn, $sql);
