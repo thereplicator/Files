@@ -18,12 +18,13 @@
   $pwd = mysqli_real_escape_string($conn,$_POST["pwd"]);
 
   // $sql = "INSERT INTO users (FirstName , LastName , Email, password) VALUES ('$first','$last','$email','$pwd');";
-  $sql = 'INSERT INTO users (FirstName , LastName , Email, pwd)
-          VALUES ('. $first. ',
-          '. $last .',
-          '. $email.',
-          '. $pwd.');';
-  
+  // $sql = 'INSERT INTO users (FirstName , LastName , Email, pwd)
+  //         VALUES ('. $first. ',
+  //         '. $last .',
+  //         '. $email.',
+  //         '. $pwd.');';
+  $sql = "INSERT INTO users (FirstName, LastName, Email, pwd)
+  VALUES ('Hadi', 'Haidar', 'blabla@test.net', '1234abd@');";
   // $tsql= "SELECT * FROM Models";
   $getResults= sqlsrv_query($conn, $sql);
   // mysqli_query($conn, $sql);
