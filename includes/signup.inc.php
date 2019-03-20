@@ -28,12 +28,7 @@
   echo $pwd;
 
   $sql = "INSERT INTO users (FirstName , LastName , Email, pwd)
-          VALUES (\'" . $first. "\',
-          \'" . $last . "\',
-          \'" . $email. "\',
-          \'" . $pwd. "\');
-          ";
-
+          VALUES ('$first' , '$last', '$email' , '$pwd');";
 
   echo $sql;
   // $sql = "INSERT INTO users (FirstName, LastName, Email, pwd)
