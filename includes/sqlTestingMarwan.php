@@ -1,5 +1,5 @@
 <?php
-    $serverName = "tcp:threreplicator.database.windows.net"; // update me
+    $serverName = "threreplicator.database.windows.net"; // update me
     $connectionOptions = array(
         "Database" => "Users", // update me
         "Uid" => "hmh75", // update me
@@ -13,7 +13,7 @@
     if ($getResults == FALSE)
         echo (sqlsrv_errors());
     while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
-        echo $row;
+        echo $row["KeyWord"] . " " . $row["gcodeFile"];
     }
     sqlsrv_free_stmt($getResults);
 ?>
