@@ -18,11 +18,11 @@
   $pwd = mysqli_real_escape_string($conn,$_POST["pwd"]);
 
   // $sql = "INSERT INTO users (FirstName , LastName , Email, password) VALUES ('$first','$last','$email','$pwd');";
-  $sql = "INSERT INTO users (FirstName , LastName , Email, pwd)
+  $sql = 'INSERT INTO users (FirstName , LastName , Email, pwd)
           VALUES ('. $first. ',
           '. $last .',
           '. $email.',
-          '. $pwd.');";
+          '. $pwd.');';
 
   // $sql = "INSERT INTO dbo.users (FirstName , LastName , Email, pwd) VALUES ('$first','$last','$email','$pwd');";
   mysqli_query($conn, $sql);
