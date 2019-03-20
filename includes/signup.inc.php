@@ -2,6 +2,11 @@
   echo "string";
   include_once 'dbh.inc.php';
 
+  //debug 
+  if(isset($_POST["first"])){
+    echo "first";
+  }
+  
   $first = mysqli_real_escape_string($conn,$_POST["first"]);
   $last = mysqli_real_escape_string($conn,$_POST["last"]);
   $email = mysqli_real_escape_string($conn,$_POST["email"]);
