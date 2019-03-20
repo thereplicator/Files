@@ -128,7 +128,7 @@
 						<thead>
 							<tr style = "Background : #222"class="table100-head">
 								<th class="column1">Name</th>
-								<th class="column2">STL</th>
+								<th class="column2">GCode</th>
 								<th class="column3">Number of Prints</th>
 
 							</tr>
