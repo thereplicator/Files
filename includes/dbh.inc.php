@@ -5,11 +5,11 @@
 // $password=  "$$@@256NH";
 // $conn = new mysqli($host, $username,$password,$dbame);
 
-$serverName = "threreplicator.database.windows.net"; // update me
+$serverName = "threreplicator.database.windows.net"; 
 $connectionOptions = array(
-    "Database" => "Users", // update me
-    "Uid" => "hmh75", // update me
-    "PWD" => "$$@@256NH" // update me
+    "Database" => "Users", 
+    "Uid" => "hmh75",
+    "PWD" => "$$@@256NH"
 );
 //Establishes the connection
 $conn = sqlsrv_connect($serverName, $connectionOptions);
