@@ -2,10 +2,10 @@
   echo "string";
   include_once 'dbh.inc.php';
 
-  //debug 
-  if(isset($_POST["first"])){
-    echo "first";
-  }
+  // //debug 
+  // if(isset($_POST["first"])){
+  //   echo "first";
+  // }
 
   // $first = mysqli_real_escape_string($conn,$_POST["first"]);
   // echo $first;
@@ -19,15 +19,20 @@
 
   //NEED TO ESCAPE STRINGS AND HASH
   $first = $_POST["first"];
+  echo $first;
   $last = $_POST["last"];
+  echo $last;
   $email = $_POST["email"];
+  echo $email;
   $pwd = $_POST["pwd"];
+  echo $pwd;
 
   $sql = 'INSERT INTO users (FirstName , LastName , Email, pwd)
           VALUES ('. $first. ',
-          '. $last .',
-          '. $email.',
-          '. $pwd.');';
+          ' . $last . ',
+          ' . $email. ',
+          ' . $pwd. ');
+          ';
 
   // $sql = "INSERT INTO users (FirstName, LastName, Email, pwd)
   // VALUES ('Hadi', 'Haidar', 'blabla@test.net', '1234abd@');";
@@ -35,6 +40,6 @@
 
   // mysqli_query($conn, $sql);
 
-  header("Location: ../lesson16.php");
+  // header("Location: ../lesson16.php");
 
 ?>
