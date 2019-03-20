@@ -125,34 +125,34 @@
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Email Address">
+                  <input type="email" id="email" name ="email"class="form-control" placeholder="Email Address">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Firstname</label>
-                  <input type="email" id="email" class="form-control" placeholder="Firstname">
+                  <label class="font-weight-bold">Firstname</label>
+                  <input type="first" id="first" name ="first"class="form-control" placeholder="Firstname">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="font-weight-bold" for="email">Lastname</label>
-                  <input type="email" id="email" class="form-control" placeholder="Lastname">
+                  <label class="font-weight-bold" for="last">Lastname</label>
+                  <input type="last" id="last" name ="last"class="form-control" placeholder="Lastname">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Password</label>
-                  <input type="password" id="password" class="form-control" placeholder="Password">
+                  <input type="password" id="password" name = "password" class="form-control" placeholder="Password">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <button type="submit" value="" class="btn btn-primary px-4 py-2">Sign Up</button>
+                  <button type="submit" value="" name = "signup-button"class="btn btn-primary px-4 py-2">Sign Up</button>
                 </div>
               </div>
 
