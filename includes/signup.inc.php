@@ -16,6 +16,7 @@
   $sql = "INSERT INTO dbo.users (FirstName , LastName , Email, password) VALUES ('$first','$last','$email','$pwd');";
   mysqli_query($conn, $sql);
 
-  header("Location: ../lesson16.php");
+  echo "string 2";
+  // header("Location: ../lesson16.php");
 
 ?>
