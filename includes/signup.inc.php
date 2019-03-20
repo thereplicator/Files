@@ -23,9 +23,10 @@
           '. $last .',
           '. $email.',
           '. $pwd.');';
-
-  // $sql = "INSERT INTO dbo.users (FirstName , LastName , Email, pwd) VALUES ('$first','$last','$email','$pwd');";
-  mysqli_query($conn, $sql);
+  
+  // $tsql= "SELECT * FROM Models";
+  $getResults= sqlsrv_query($conn, $sql);
+  // mysqli_query($conn, $sql);
 
   echo "string 2";
   // header("Location: ../lesson16.php");
