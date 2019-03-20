@@ -110,10 +110,10 @@
     </div>
 
     <?php
-        $hostname = "localhost";
-        $username = "root";
-        $password = "";
-        $databaseName = "testing";
+        $hostname = "threreplicator.database.windows.net";
+        $username = "hmh75";
+        $password = "$$@@256NH";
+        $databaseName = "Models";
 
         $connect = mysqli_connect($hostname, $username, $password, $databaseName);
         $query = "SELECT * FROM testing1";
