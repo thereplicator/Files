@@ -14,12 +14,9 @@
     // $pwd = $_POST["pwd"];
 
   // $sql = "INSERT INTO users (FirstName , LastName , Email, password) VALUES ('$first','$last','$email','$pwd');";
-  $sql = "INSERT INTO users (FirstName , LastName , Email, password) VALUES ('$first','$last','$email','$pwd');";
+  $sql = "INSERT INTO users (FirstName , LastName , Email, pwd) VALUES ('$first','$last','$email','$pwd');";
 
-<<<<<<< HEAD
-  $sql = "INSERT INTO dbo.users (FirstName , LastName , Email, pwd) VALUES ('$first','$last','$email','$pwd');";
-=======
->>>>>>> cc4a5b741e67ea852d4c84c64214c1aa586a2d0b
+  // $sql = "INSERT INTO dbo.users (FirstName , LastName , Email, pwd) VALUES ('$first','$last','$email','$pwd');";
   mysqli_query($conn, $sql);
 
   echo "string 2";
