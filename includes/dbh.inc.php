@@ -1,5 +1,5 @@
 <?php
-$host = "threreplicator.database.windows.net";
+$host = "threreplicator.azurewebsites.net";
 $dbname = "Users";
 $username = "hmh75";
 $password=  "$$@@256NH";
