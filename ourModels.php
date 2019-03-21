@@ -145,14 +145,15 @@
               <?php 
               while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)){
                 // Debug
-                echo $row["gcodeFile"];
-                echo $row["KeyWord"];
-                echo $row["NumberOfPrints"];
+                $Name = $row["KeyWord"];
+                $GCode = $row["gcodeFile"];
+                $NumberOfPrints = $row["NumberOfPrints"];
+
               ?>
 		              <tr>
-			                 <td><?php echo $row["KeyWord"];?></td>
-			                 <td><?php echo $row["gcodeFile"];?></td>
-			                 <td><?php echo $row["NumberOfPrints"];?></td>
+			                 <td><?php echo $Name;?></td>
+			                 <td><?php echo $GCode;?></td>
+			                 <td><?php echo $NumberOfPrints;?></td>
 		             </tr>
               <?php 
               }
