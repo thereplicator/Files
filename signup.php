@@ -124,6 +124,14 @@
                 <input type="first" id="first" name ="first"class="form-control" placeholder="Firstname">
               </div>
             </div>
+            
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="last">Lastname</label>
+                <input type="last" id="last" name ="last"class="form-control" placeholder="Lastname">
+              </div>
+            </div>
+            
             <div class="row form-group">
               <div class="col-md-12">
                 <label class="font-weight-bold" for="email">Email</label>
@@ -132,12 +140,6 @@
             </div>
 
 
-            <div class="row form-group">
-              <div class="col-md-12">
-                <label class="font-weight-bold" for="last">Lastname</label>
-                <input type="last" id="last" name ="last"class="form-control" placeholder="Lastname">
-              </div>
-            </div>
 
             <div class="row form-group">
               <div class="col-md-12">
