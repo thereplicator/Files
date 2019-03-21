@@ -143,11 +143,9 @@
 						</thead>
 						<tbody>
               <?php 
-              // while($row1 = mysqli_fetch_array($result)):;
               while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)){
-                // echo $row["KeyWord"] . " " . $row["gcodeFile"];
-                echo $row["gcodeFile"];
-              // }
+                // Debug
+                // echo $row["gcodeFile"];
               ?>
 		              <tr>
 			                 <td><?php echo $row["gcodeFile"];?></td>
@@ -158,9 +156,6 @@
               }
               sqlsrv_free_stmt($getResults);
               ?>
-
-
-
 						</tbody>
 					</table>
 				</div>
