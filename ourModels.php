@@ -148,8 +148,8 @@
                 // echo $row["gcodeFile"];
               ?>
 		              <tr>
-			                 <td><?php echo $row["gcodeFile"];?></td>
 			                 <td><?php echo $row["KeyWord"];?></td>
+			                 <td><?php echo $row["gcodeFile"];?></td>
 			                 <td><?php echo $row["NumberOfPrints"];?></td>
 		             </tr>
               <?php 
