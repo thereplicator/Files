@@ -167,16 +167,16 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/person_3.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Jean</span> Keenan</a></h3>
+              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/Shatilov.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a href="#"><span>Mohammad N.</span> Chatila</a></h3>
               <!-- <p>Business Consultant in Medium</p> -->
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/person_4.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Justin</span> Clark</a></h3>
+              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/OmarRachidi.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a href="#"><span>Omar</span> Al Rachidi</a></h3>
               <!-- <p>Business Consultant in Slack</p> -->
             </div>
           </div>
