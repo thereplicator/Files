@@ -5,9 +5,9 @@
 // $password=  "$$@@256NH";
 // $conn = new mysqli($host, $username,$password,$dbame);
 
-$serverName = "threreplicator.database.windows.net"; 
+$serverName = "threreplicator.database.windows.net";
 $connectionOptions = array(
-    "Database" => "Users", 
+    "Database" => "Users",
     "Uid" => "hmh75",
     "PWD" => "$$@@256NH"
 );

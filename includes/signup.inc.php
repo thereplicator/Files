@@ -2,7 +2,7 @@
   echo "string";
   include_once 'dbh.inc.php';
 
-  // //debug 
+  // //debug
   // if(isset($_POST["first"])){
   //   echo "first";
   // }
