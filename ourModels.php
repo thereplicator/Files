@@ -120,9 +120,12 @@
         $conn = sqlsrv_connect($serverName, $connectionOptions);
         $sql = "SELECT * FROM Models";
         echo $sql;
-        // $sql = "INSERT INTO users (FirstName, LastName, Email, pwd)
-        // VALUES ('Hadi', 'Haidar', 'blabla@test.net', '1234abd@');";
         $getResults= sqlsrv_query($conn, $sql);
+        echo ("Reading data from table" . PHP_EOL);
+        if ($getResults == FALSE){
+          echo (sqlsrv_errors());
+        }
+
     ?>
 
     <div class="limiter">
@@ -139,13 +142,23 @@
 							</tr>
 						</thead>
 						<tbody>
-              <?php while($row1 = mysqli_fetch_array($result)):;?>
+              <?php 
+              // while($row1 = mysqli_fetch_array($result)):;
+              while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)){
+                // echo $row["KeyWord"] . " " . $row["gcodeFile"];
+              // }
+              sqlsrv_free_stmt($getResults);
+              ?>
 		              <tr>
 			                 <td><?php echo $row1[0];?></td>
 			                 <td><?php echo $row1[1];?></td>
 			                 <td><?php echo $row1[2];?></td>
 		             </tr>
-		          <?php endwhile;?>
+              <?php 
+              }
+              sqlsrv_free_stmt($getResults);
+              ?>
+
 
 
 						</tbody>
