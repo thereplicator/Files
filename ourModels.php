@@ -119,7 +119,7 @@
         //Establishes the connection
         $conn = sqlsrv_connect($serverName, $connectionOptions);
         $sql = "SELECT * FROM Models";
-        echo $sql;
+        // echo $sql;
         $getResults= sqlsrv_query($conn, $sql);
         echo ("Reading data from table" . PHP_EOL);
         if ($getResults == FALSE){
@@ -147,7 +147,6 @@
               while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)){
                 // echo $row["KeyWord"] . " " . $row["gcodeFile"];
               // }
-              sqlsrv_free_stmt($getResults);
               ?>
 		              <tr>
 			                 <td><?php echo $row1[0];?></td>
