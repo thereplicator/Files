@@ -124,7 +124,7 @@
                 <br>
               <input type="text" name="email" placeholder="email">
                 <br>
-              <input type="password" name="pwd" placeholder="password">
+              <input type="password" name="pwd"placeholder="password">
                 <br>
               <button type="submit" name="submit">Sign Up</button>
             </form>
