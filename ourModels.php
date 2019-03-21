@@ -149,9 +149,9 @@
               // }
               ?>
 		              <tr>
-			                 <td><?php echo $row1["gcodeFile"];?></td>
-			                 <td><?php echo $row1["KeyWord"];?></td>
-			                 <td><?php echo $row1["NumberOfPrints"];?></td>
+			                 <td><?php echo $row[0];?></td>
+			                 <td><?php echo $row[1];?></td>
+			                 <td><?php echo $row[2];?></td>
 		             </tr>
               <?php 
               }
