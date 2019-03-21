@@ -110,14 +110,19 @@
     </div>
 
     <?php
-        $hostname = "threreplicator.database.windows.net";
-        $username = "hmh75";
-        $password = "$$@@256NH";
-        $databaseName = "Models";
-
-        $connect = mysqli_connect($hostname, $username, $password, $databaseName);
-        $query = "SELECT * FROM testing1";
-        $result = mysqli_query($connect, $query);
+        $serverName = "threreplicator.database.windows.net"; 
+        $connectionOptions = array(
+            "Database" => "Users", 
+            "Uid" => "hmh75",
+            "PWD" => "$$@@256NH"
+        );
+        //Establishes the connection
+        $conn = sqlsrv_connect($serverName, $connectionOptions);
+        $sql = "SELECT * FROM Models";
+        echo $sql;
+        // $sql = "INSERT INTO users (FirstName, LastName, Email, pwd)
+        // VALUES ('Hadi', 'Haidar', 'blabla@test.net', '1234abd@');";
+        $getResults= sqlsrv_query($conn, $sql);
     ?>
 
     <div class="limiter">
