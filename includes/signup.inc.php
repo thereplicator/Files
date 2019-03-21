@@ -19,13 +19,9 @@
 
   //NEED TO ESCAPE STRINGS AND HASH
   $first = $_POST["first"];
-  echo $first;
   $last = $_POST["last"];
-  echo $last;
   $email = $_POST["email"];
-  echo $email;
   $pwd = $_POST["pwd"];
-  echo $pwd;
 
   $sql = "INSERT INTO users (FirstName , LastName , Email, pwd)
           VALUES ('$first' , '$last', '$email' , '$pwd');";
