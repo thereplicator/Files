@@ -146,12 +146,13 @@
               // while($row1 = mysqli_fetch_array($result)):;
               while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)){
                 // echo $row["KeyWord"] . " " . $row["gcodeFile"];
+                echo $row["gcodeFile"];
               // }
               ?>
 		              <tr>
-			                 <td><?php echo $row[0];?></td>
-			                 <td><?php echo $row[1];?></td>
-			                 <td><?php echo $row[2];?></td>
+			                 <td><?php echo $row["gcodeFile"];?></td>
+			                 <td><?php echo $row["KeyWord"];?></td>
+			                 <td><?php echo $row["NumberOfPrints"];?></td>
 		             </tr>
               <?php 
               }
