@@ -145,7 +145,9 @@
               <?php 
               while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)){
                 // Debug
-                // echo $row["gcodeFile"];
+                echo $row["gcodeFile"];
+                echo $row["KeyWord"];
+                echo $row["NumberOfPrints"];
               ?>
 		              <tr>
 			                 <td><?php echo $row["KeyWord"];?></td>
