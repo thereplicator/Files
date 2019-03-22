@@ -110,16 +110,8 @@
     </div>
 
     <?php
-        $serverName = "threreplicator.database.windows.net"; 
-        $connectionOptions = array(
-            "Database" => "Users", 
-            "Uid" => "hmh75",
-            "PWD" => "$$@@256NH"
-        );
-        //Establishes the connection
-        $conn = sqlsrv_connect($serverName, $connectionOptions);
+        include_once 'includes/dbh.inc.php';
         $sql = "SELECT * FROM Models";
-        // echo $sql;
         $getResults= sqlsrv_query($conn, $sql);
         echo ("Reading data from table" . PHP_EOL);
         if ($getResults == FALSE){
@@ -142,7 +134,7 @@
 							</tr>
 						</thead>
 						<tbody>
-              <?php 
+              <?php
               while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)){
                 // Debug
                 $Name = $row["KeyWord"];
@@ -155,7 +147,7 @@
 			                 <td><?php echo $GCode;?></td>
 			                 <td><?php echo $NumberOfPrints;?></td>
 		             </tr>
-              <?php 
+              <?php
               }
               sqlsrv_free_stmt($getResults);
               ?>
