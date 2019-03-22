@@ -11,7 +11,7 @@ if(isset($_POST['signup-submit'])){
     exit();
   }else {
     if((!preg_match("/^[a-zA-Z]*$/", $first)) || !preg_match("/^[a-zA-Z]*$/", $last)){
-      header("Location: ../Alexa.php?error=ivalidFirstameOrLastame");
+      header("Location: ../signup.php?error=ivalidFirstameOrLastame");
       exit();
     }else {
       if(strlen($pwd) < 8){
