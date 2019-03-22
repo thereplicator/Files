@@ -151,7 +151,7 @@
 
             <div class="row form-group">
               <div class="col-md-12">
-                <button type="submit" value="" name = "signup-submit"class="btn btn-primary px-4 py-2">Sign Up</button>
+                <button type="submit" name = "signup-submit"class="btn btn-primary px-4 py-2">Sign Up</button>
               </div>
             </div>
             </form>
