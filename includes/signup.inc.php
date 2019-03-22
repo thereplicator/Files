@@ -7,19 +7,19 @@ if(isset($_POST['signup-submit'])){
   $email = $_POST["email"];
   $pwd = $_POST["pwd"];
   if(empty($first) || empty($last) || empty($email) || empty($pwd)){
-    header("Location: ../signup.php?error=emptyFields&first=".$first."&last=".$last. "&email=".$email);
+    header("Location: ../index.php?error=emptyFields&first=".$first."&last=".$last. "&email=".$email);
     exit();
   }else {
     if((!preg_match("/^[a-zA-Z]*$/", $first)) || !preg_match("/^[a-zA-Z]*$/", $last)){
-      header("Location: ../signup.php?error=ivalidFirstameOrLastame&first=");
+      header("Location: ../Alexa.php?error=ivalidFirstameOrLastame&first=");
       exit();
     }else {
       if(strlen($pwd) < 8){
-        header("Location: ../signup.php?PasswordMusteAtLeast8Characters");
+        header("Location: ../ourModels.php?PasswordMusteAtLeast8Characters");
         exit();
       }else {
         if(!preg_match("/^[a-zA-Z0-9!@#$%^&]*$/", $pwd)){
-          header("Location: ../signup.php?IvalidPassword");
+          header("Location: ../login.php?IvalidPassword");
           exit();
         }else {
           $sql = "INSERT INTO users (FirstName , LastName , Email, pwd)
