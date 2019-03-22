@@ -117,16 +117,44 @@
         <div class="row">
 
           <div class="col-md-12 col-lg-8 mb-5">
-            <form action ="includes/signup.inc.php" method ="POST">
-              <input type="text" name="first" placeholder="firsname">
-                <br>
-              <input type="text" name="last" placeholder="lastname">
-                <br>
-              <input type="text" name="email" placeholder="email">
-                <br>
-              <input type="password" name="pwd"placeholder="password">
-                <br>
-              <button type="submit" name="submit">Sign Up</button>
+
+          <form action="includes/signup.inc.php" class="p-5 bg-white" method="POST">
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold">Firstname</label>
+                <input type="first" id="first" name ="first"class="form-control" placeholder="Firstname">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="last">Lastname</label>
+                <input type="last" id="last" name ="last"class="form-control" placeholder="Lastname">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="email">Email</label>
+                <input type="email" id="email" name ="email" class="form-control" placeholder="Email Address">
+              </div>
+            </div>
+
+
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <label class="font-weight-bold" for="email">Password</label>
+                <input type="password" id="password" name = "pwd" class="form-control" placeholder="Password">
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <div class="col-md-12">
+                <button type="submit" value="" name = "submit"class="btn btn-primary px-4 py-2">Sign Up</button>
+              </div>
+            </div>
+>>>>>>> 32a836cf0fc6c37b8b4430a4e9714f6a1f73c9da
             </form>
           </div>
         </div>
