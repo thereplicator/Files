@@ -7,7 +7,7 @@ if(isset($_POST['signup-submit'])){
   $email = $_POST["email"];
   $pwd = $_POST["pwd"];
   if(empty($first) || empty($last) || empty($email) || empty($pwd)){
-    header("Location: ../index.php?error=emptyFields&first=".$first."&last=".$last. "&email=".$email);
+    header("Location: ../signup.php?error=emptyFields&first=".$first."&last=".$last. "&email=".$email);
     exit();
   }else {
     if((!preg_match("/^[a-zA-Z]*$/", $first)) || !preg_match("/^[a-zA-Z]*$/", $last)){
