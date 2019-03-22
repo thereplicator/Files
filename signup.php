@@ -154,7 +154,7 @@
                 <button type="submit" value="" name = "submit"class="btn btn-primary px-4 py-2">Sign Up</button>
               </div>
             </div>
->>>>>>> 32a836cf0fc6c37b8b4430a4e9714f6a1f73c9da
+<!-- >>>>>>> 32a836cf0fc6c37b8b4430a4e9714f6a1f73c9da -->
             </form>
           </div>
         </div>
