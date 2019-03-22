@@ -15,11 +15,11 @@ if(isset($_POST['signup-submit'])){
       exit();
     }else {
       if(strlen($pwd) < 8){
-        header("Location: ../ourModels.php?PasswordMusteAtLeast8Characters");
+        header("Location: ../ourModels.php?error=PasswordMusteAtLeast8Characters");
         exit();
       }else {
         if(!preg_match("/^[a-zA-Z0-9!@#$%^&]*$/", $pwd)){
-          header("Location: ../signup.php?IvalidPassword");
+          header("Location: ../signup.php?error=IvalidPassword");
           exit();
         }else {
           $checkUserTakenSQl = "SELECT * FROM users WHERE Email='$email'";
@@ -29,7 +29,8 @@ if(isset($_POST['signup-submit'])){
             header("Location: ../signup.php?userTaken");
             exit();
           }else {
-            $sql = "INSERT INTO users (FirstName , LastName , Email, pwd) VALUES ('$first' , '$last', '$email' , '$pwd');";
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+            $sql = "INSERT INTO users (FirstName , LastName , Email, pwd) VALUES ('$first' , '$last', '$email' , '$hashedPassword');";
             $getResults= sqlsrv_query($conn, $sql);
             header("Location: ../signup.php?signupsuccess");
             exit();
