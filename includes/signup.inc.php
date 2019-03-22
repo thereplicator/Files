@@ -1,5 +1,4 @@
 <?php
-  echo "string";
   include_once 'dbh.inc.php';
 
   //NEED TO ESCAPE STRINGS AND HASH
