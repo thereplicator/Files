@@ -19,14 +19,21 @@ if(isset($_POST['signup-submit'])){
         exit();
       }else {
         if(!preg_match("/^[a-zA-Z0-9!@#$%^&]*$/", $pwd)){
-          header("Location: ../login.php?IvalidPassword");
+          header("Location: ../signup.php?IvalidPassword");
           exit();
         }else {
-          $sql = "INSERT INTO users (FirstName , LastName , Email, pwd)
-                  VALUES ('$first' , '$last', '$email' , '$pwd');";
-          $getResults= sqlsrv_query($conn, $sql);
-          header("Location: ../signup.php?signupsuccess");
-          exit();
+          $checkUserTakenSQl = "SELECT * FROM users WHERE Email='$email'";
+          $userTakenResult = sqlsrv_query($conn, $checkUserTakenSQl);
+          $resultCheck = sqlsrv_num_rows($userTakenResult);
+          if($resultCheck>0){
+            header("Location: ../signup.php?userTaken");
+            exit();
+          }else {
+            $sql = "INSERT INTO users (FirstName , LastName , Email, pwd) VALUES ('$first' , '$last', '$email' , '$pwd');";
+            $getResults= sqlsrv_query($conn, $sql);
+            header("Location: ../signup.php?signupsuccess");
+            exit();
+          }
         }
       }
     }
