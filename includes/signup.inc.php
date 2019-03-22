@@ -6,8 +6,8 @@ if(isset($_POST['signup-submit'])){
   $last = $_POST["last"];
   $email = $_POST["email"];
   $pwd = $_POST["pwd"];
-  if(empty($first) || empty($last) || empty($email) || empty($email)){
-    header("Location: ../index.php?error=emptyFields&first=".$first."&last=".$last. "&email=".$email);
+  if(empty($first) || empty($last) || empty($email) || empty($pwd)){
+    // header("Location: ../index.php?error=emptyFields&first=".$first."&last=".$last. "&email=".$email);
     echo "empty";
     exit();
   }else {
