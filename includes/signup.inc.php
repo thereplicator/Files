@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['signup-submit'])){
-  // include_once 'dbh.inc.php';
+  include_once 'dbh.inc.php';
   //NEED TO ESCAPE STRINGS AND HASH
   $first = $_POST["first"];
   $last = $_POST["last"];
