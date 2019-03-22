@@ -1,11 +1,12 @@
 <?php
 if(isset($_POST['signup-submit'])){
   include_once 'dbh.inc.php';
-  //NEED TO ESCAPE STRINGS AND HASH
+
   $first = $_POST["first"];
   $last = $_POST["last"];
   $email = $_POST["email"];
   $pwd = $_POST["pwd"];
+
   if(empty($first) || empty($last) || empty($email) || empty($pwd)){
     header("Location: ../signup.php?error=emptyFields");
     exit();
@@ -25,7 +26,7 @@ if(isset($_POST['signup-submit'])){
           $checkUserTakenSQl = "SELECT * FROM users WHERE Email='$email'";
           $userTakenResult = sqlsrv_query($conn, $checkUserTakenSQl);
           $resultCheck = sqlsrv_num_rows($userTakenResult);
-          if($resultCheck>0){
+          if($resultCheck > 0){
             header("Location: ../signup.php?userTaken");
             exit();
           }else {
