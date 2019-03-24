@@ -1,7 +1,7 @@
-<?php
-	session_start();
+<!-- <?php
+	// session_start();
 
-?>
+?> -->
 
 
 
@@ -64,12 +64,12 @@
                     <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                      <!-- d-lg-block -->
                     <ul class="site-menu js-clone-nav d-none">
-                      <?php
+                      <!-- <?php
 
-                      if (isset($_SESSION['email'])) {
-                        echo '<li>'.$_SESSION['first'].' '.$_SESSION['last']'</li>';
-                      }
-                      ?>
+                      // if (isset($_SESSION['email'])) {
+                      //   echo '<li>'.$_SESSION['first'].' '.$_SESSION['last']'</li>';
+                      // }
+                      ?> -->
                       <li class="active">
                         <a href="index.php">Home</a>
                       </li>
@@ -121,13 +121,13 @@
             <h1 class="mb-4">Connect to Alexa and print 3D models</h1>
             <p class="mb-5"></p>
             <p class="regular-font-size">
-              <?php
+              <!-- <?php
 
-              if (!isset($_SESSION['email'])) {
-                echo '<a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
-                <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>';
-              }
-              ?>
+              // if (!isset($_SESSION['email'])) {
+              //   echo '<a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
+              //   <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>';
+              // }
+              ?> -->
             </p>
           </div>
         </div>
