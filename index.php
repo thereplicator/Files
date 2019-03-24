@@ -121,8 +121,14 @@
             <h1 class="mb-4">Connect to Alexa and print 3D models</h1>
             <p class="mb-5"></p>
             <p class="regular-font-size">
-              <a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
-              //   <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>
+              <?php
+                if(isset($_SESSION['email'])){
+                  echo '<a href="#" class="btn btn-primary px-4 py-3 text-uppercase">Upload Model</a>';
+                }else {
+                  echo '<a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
+                        <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>';
+                }
+              ?>
             </p>
           </div>
         </div>
