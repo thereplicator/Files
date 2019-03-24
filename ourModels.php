@@ -72,15 +72,17 @@
                       <li>
                         <?php
                           if(isset($_SESSION['email'])){
-                            echo "<form class='p-5 bg-white' action='includes/logout.inc.php' method='post'>
+                            ?> <form class='p-5 bg-white' action='includes/logout.inc.php' method='post'>
                                           <div class='row form-group'>
                                             <div class='col-md-12'>
                                               <button type='submit' name='logout-submit' class='btn btn-primary px-4 py-2'>Log Out</button>
                                             </div>
                                           </div>
-                                  </form>";
+                                </form>
+                          <?php
                           }else {
-                            echo '<li>
+                          ?>
+                            <li>
                             <a href="signup.php">Create An Account</a>
                             </li>
                              <li>
@@ -103,7 +105,8 @@
                                     </div>
                                   </div>
                                   </form>
-                                  </li>';
+                                  </li>
+                        <?php
                           }
                         ?>
                     </ul>
