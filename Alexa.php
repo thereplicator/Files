@@ -41,63 +41,78 @@
     </div> <!-- .site-mobile-menu -->
 
 
-    <div class="site-navbar-wrap js-site-navbar bg-white">
+        <div class="site-navbar-wrap js-site-navbar bg-white">
 
-      <div class="container">
-        <div class="site-navbar bg-light">
-          <div class="py-1">
-            <div class="row align-items-center">
-              <div class="col-2">
-                <h2 class="mb-0 site-logo"><a href="index.php">Replicator</a></h2>
-              </div>
-              <div class="col-10">
-                <nav class="site-navigation text-right" role="navigation">
-                  <div class="container">
-                    <!-- d-lg-none -->
-                    <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
-                     <!-- d-lg-block -->
-                    <ul class="site-menu js-clone-nav d-none">
-                      <li >
-                        <a href="index.php">Home</a>
-                      </li>
-                      <li ><a href="ourModels.php">Available Models</a></li>
-                      <li><a href="signup.php">Create An Account</a></li>
-                        <li class="active"><a href="Alexa.php">Communicate With Alexa!</a></li>
-                      <li>
-                        <form action="#" class="p-5 bg-white">
-
-                          <div class="row form-group">
-                            <div class="col-md-12">
-                              <label class="font-weight-bold" for="email">Email</label>
-                              <input type="email" id="email" class="form-control" placeholder="Email Address">
-                            </div>
-                          </div>
-
-                          <div class="row form-group">
-                            <div class="col-md-12">
-                              <label class="font-weight-bold" for="email">Password</label>
-                              <input type="password" id="password" class="form-control" placeholder="Password">
-                            </div>
-                          </div>
-
-                          <div class="row form-group">
-                            <div class="col-md-12">
-                              <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
-                            </div>
-                          </div>
-
-
-                        </form>
-                      </li>
-                    </ul>
+          <div class="container">
+            <div class="site-navbar bg-light">
+              <div class="py-1">
+                <div class="row align-items-center">
+                  <div class="col-2">
+                    <h2 class="mb-0 site-logo"><a href="index.php">Replicator</a></h2>
                   </div>
-                </nav>
+                  <div class="col-10">
+                    <nav class="site-navigation text-right" role="navigation">
+                      <div class="container">
+                        <!-- d-lg-none -->
+                        <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+                         <!-- d-lg-block -->
+                        <ul class="site-menu js-clone-nav d-none">
+                          <?php
+                            if(isset($_SESSION['email'])){
+                              echo "<li>".$_SESSION['first']." ".$_SESSION['last']."</li>";
+                            }
+                            ?>
+                          <li>
+                            <a href="index.php">Home</a>
+                          </li>
+                          <li class="active"><a href="ourModels.php">Available Models</a></li>
+                          <li><a href="Alexa.php">Communicate With Alexa!</a></li>
+                          <li>
+                            <?php
+                              if(isset($_SESSION['email'])){
+                                echo "<form class='p-5 bg-white' action='includes/logout.inc.php' method='post'>
+                                              <div class='row form-group'>
+                                                <div class='col-md-12'>
+                                                  <button type='submit' name='logout-submit' class='btn btn-primary px-4 py-2'>Log Out</button>
+                                                </div>
+                                              </div>
+                                      </form>";
+                              }else {
+                                echo '<li>
+                                <a href="signup.php">Create An Account</a>
+                                </li>
+                                 <li>
+                                    <form action="#" class="p-5 bg-white">
+                                    <div class="row form-group">
+                                        <div class="col-md-12">
+                                          <label class="font-weight-bold" for="email">Email</label>
+                                          <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                        </div>
+                                      </div>
+                                      <div class="row form-group">
+                                        <div class="col-md-12">
+                                          <label class="font-weight-bold" for="email">Password</label>
+                                          <input type="password" id="password" class="form-control" placeholder="Password">
+                                        </div>
+                                      </div>
+                                      <div class="row form-group">
+                                        <div class="col-md-12">
+                                          <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
+                                        </div>
+                                      </div>
+                                      </form>
+                                      </li>';
+                              }
+                            ?>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
     <div class="site-blocks-cover overlay" style="background-image: url(images/alexa.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
@@ -171,77 +186,82 @@ Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most po
       </p>
     </div> -->
 
-
-
-
-
-
-
-
-      <footer class="site-footer" style="background-image: url('images/baner.jpg');">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <h3 class="footer-heading mb-4 text-white">Replicator</h3>
-              <p><i>We create new  possibilities for a world full of possibilities!</i></p>
-              <p><a href="index.php#aboutInfo" class="btn btn-primary pill text-white px-4">Read More</a></p>
-            </div>
-            <div class="col-md-6">
+          <footer class="site-footer" style="background-image: url('images/baner.jpg');">
+            <div class="container">
               <div class="row">
-                <div class="col-md-6">
-                  <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="ourModels.php">Available Models</a></li>
-                    <li><a href="signup.php">Create An Account</a></li>
-                    <li><a href="#">Communicating With Alexa</a></li>
-                    <li><a href="#Founders">Meet The Founders!</a></li>
-                  </ul>
+                <div class="col-md-4">
+                  <h3 class="footer-heading mb-4 text-white">Replicator</h3>
+                  <p><i>We create new  possibilities for a world full of possibilities!</i></p>
+                  <p><a href="#aboutInfo" class="btn btn-primary pill text-white px-4">Read More</a></p>
                 </div>
-
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
+                        <ul class="list-unstyled">
+                          <li><a href="index.php">Home</a></li>
+                          <li><a href="ourModels.php">Available Models</a></li>
+                          <?php
+                            if(isset($_SESSION['email'])){
+                              echo '<li><a href="#">Upload Model</a></li>';
+                            }else {
+                              echo '<li><a href="signup.php">Create An Account</a></li>';
+                            }
+                          ?>
+                          <li><a href="#">Communicating With Alexa</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h3 class="footer-heading mb-4 text-white">&nbsp;</h3>
+                        <ul class="list-unstyled">
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </footer>
         </div>
-      </footer>
-    </div>
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/bootstrap-datepicker.min.js"></script>
-    <script src="js/aos.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script src="js/aos.js"></script>
 
 
-    <script src="js/mediaelement-and-player.min.js"></script>
+        <script src="js/mediaelement-and-player.min.js"></script>
 
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
 
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-                  var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                      var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
 
-                  for (var i = 0; i < total; i++) {
-                      new MediaElementPlayer(mediaElements[i], {
-                          pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
-                          shimScriptAccess: 'always',
-                          success: function () {
-                              var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
-                              for (var j = 0; j < targetTotal; j++) {
-                                  target[j].style.visibility = 'visible';
-                              }
-                    }
+                      for (var i = 0; i < total; i++) {
+                          new MediaElementPlayer(mediaElements[i], {
+                              pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+                              shimScriptAccess: 'always',
+                              success: function () {
+                                  var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+                                  for (var j = 0; j < targetTotal; j++) {
+                                      target[j].style.visibility = 'visible';
+                                  }
+                        }
+                      });
+                      }
                   });
-                  }
-              });
-      </script>
+          </script>
 
-    </body>
-  </html>
+        </body>
+      </html>
