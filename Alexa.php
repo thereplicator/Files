@@ -2,10 +2,12 @@
 	session_start();
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>The Replicator - Models</title>
+    <title>The Replicator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -19,11 +21,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/animate.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-
-    <link rel="stylesheet" href="css/table.css">
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
@@ -45,78 +43,80 @@
     </div> <!-- .site-mobile-menu -->
 
 
-        <div class="site-navbar-wrap js-site-navbar bg-white">
+    <div class="site-navbar-wrap js-site-navbar bg-white">
 
-          <div class="container">
-            <div class="site-navbar bg-light">
-              <div class="py-1">
-                <div class="row align-items-center">
-                  <div class="col-2">
-                    <h2 class="mb-0 site-logo"><a href="index.php">Replicator</a></h2>
+      <div class="container">
+        <div class="site-navbar bg-light">
+          <div class="py-1">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo"><a href="index.php">Replicator</a></h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <!-- d-lg-none -->
+                    <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+                     <!-- d-lg-block -->
+                    <ul class="site-menu js-clone-nav d-none">
+                      <?php
+                        if(isset($_SESSION['email'])){
+                          echo "<li>".$_SESSION['first']." ".$_SESSION['last']."</li>";
+                        }
+                        ?>
+                      <li class="active">
+                        <a href="index.php">Home</a>
+                      </li>
+                      <li><a href="ourModels.php">Available Models</a></li>
+                      <li><a href="Alexa.php">Communicate With Alexa!</a></li>
+                      <li>
+                        <?php
+                          if(isset($_SESSION['email'])){
+                            echo "<form class='p-5 bg-white' action='includes/logout.inc.php' method='post'>
+                                          <div class='row form-group'>
+                                            <div class='col-md-12'>
+                                              <button type='submit' name='logout-submit' class='btn btn-primary px-4 py-2'>Log Out</button>
+                                            </div>
+                                          </div>
+                                  </form>";
+                          }else {
+                            echo '<li>
+                            <a href="signup.php">Create An Account</a>
+                            </li>
+                             <li>
+                                <form action="#" class="p-5 bg-white">
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-bold" for="email">Email</label>
+                                      <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                  </div>
+                                  <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-bold" for="email">Password</label>
+                                      <input type="password" id="password" class="form-control" placeholder="Password">
+                                    </div>
+                                  </div>
+                                  <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
+                                    </div>
+                                  </div>
+                                  </form>
+                                  </li>';
+                          }
+                        ?>
+                    </ul>
                   </div>
-                  <div class="col-10">
-                    <nav class="site-navigation text-right" role="navigation">
-                      <div class="container">
-                        <!-- d-lg-none -->
-                        <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
-                         <!-- d-lg-block -->
-                        <ul class="site-menu js-clone-nav d-none">
-                          <?php
-                            if(isset($_SESSION['email'])){
-                              echo "<li>".$_SESSION['first']." ".$_SESSION['last']."</li>";
-                            }
-                            ?>
-                          <li>
-                            <a href="index.php">Home</a>
-                          </li>
-                          <li><a href="ourModels.php">Available Models</a></li>
-                          <li class="active"><a href="Alexa.php">Communicate With Alexa!</a></li>
-                          <li>
-                            <?php
-                              if(isset($_SESSION['email'])){
-                                echo "<form class='p-5 bg-white' action='includes/logout.inc.php' method='post'>
-                                              <div class='row form-group'>
-                                                <div class='col-md-12'>
-                                                  <button type='submit' name='logout-submit' class='btn btn-primary px-4 py-2'>Log Out</button>
-                                                </div>
-                                              </div>
-                                      </form>";
-                              }else {
-                                echo '<li>
-                                <a href="signup.php">Create An Account</a>
-                                </li>
-                                 <li>
-                                    <form action="#" class="p-5 bg-white">
-                                    <div class="row form-group">
-                                        <div class="col-md-12">
-                                          <label class="font-weight-bold" for="email">Email</label>
-                                          <input type="email" id="email" class="form-control" placeholder="Email Address">
-                                        </div>
-                                      </div>
-                                      <div class="row form-group">
-                                        <div class="col-md-12">
-                                          <label class="font-weight-bold" for="email">Password</label>
-                                          <input type="password" id="password" class="form-control" placeholder="Password">
-                                        </div>
-                                      </div>
-                                      <div class="row form-group">
-                                        <div class="col-md-12">
-                                          <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
-                                        </div>
-                                      </div>
-                                      </form>
-                                      </li>';
-                              }
-                            ?>
-                        </ul>
-                      </div>
-                    </nav>
-                  </div>
-                </div>
+                </nav>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+
 
     <div class="site-blocks-cover overlay" style="background-image: url(images/alexa.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">

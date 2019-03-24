@@ -1,10 +1,13 @@
 <?php
 	session_start();
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>The Replicator - Models</title>
+    <title>The Replicator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -18,11 +21,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/animate.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-
-    <link rel="stylesheet" href="css/table.css">
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
@@ -65,10 +64,10 @@
                           echo "<li>".$_SESSION['first']." ".$_SESSION['last']."</li>";
                         }
                         ?>
-                      <li>
+                      <li class="active">
                         <a href="index.php">Home</a>
                       </li>
-                      <li class="active"><a href="ourModels.php">Available Models</a></li>
+                      <li><a href="ourModels.php">Available Models</a></li>
                       <li><a href="Alexa.php">Communicate With Alexa!</a></li>
                       <li>
                         <?php
