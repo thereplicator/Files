@@ -67,7 +67,7 @@
                       <?php
 
                       if (isset($_SESSION['email'])) {
-                        echo '<li><a href="ourModels.php">'.$_SESSION['email'].'</a></li>';
+                        echo '<li>'.$_SESSION['email'].'</li>';
                       }
                       ?>
                       <li class="active">
