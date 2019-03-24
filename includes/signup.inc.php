@@ -34,6 +34,7 @@ if(isset($_POST['signup-submit'])){
             $sql = "INSERT INTO users (FirstName , LastName , Email, pwd) VALUES ('$first' , '$last', '$email' , '$hashedPassword');";
             session_start();
             $_SESSION['email'] = $email;
+            $_SESSION['fullname'] = $first . " ". $last;
             $getResults= sqlsrv_query($conn, $sql);
             header("Location: ../index.php?signupsuccess");
             exit();
