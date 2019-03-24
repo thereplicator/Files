@@ -1,8 +1,8 @@
 <?php
 
 if(isset($_POST['login-submit'])){
-  include_once 'dbh.inc.php';
-  $email = $_POST['email']. "";
+  require 'dbh.inc.php';
+  $email = $_POST['email']);
   $password = $_POST['pwd'];
   if(empty($email)  || empty($password)){
     header("Location: ../login.php?error=emptyFields");
