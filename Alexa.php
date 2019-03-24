@@ -70,7 +70,7 @@
                             <a href="index.php">Home</a>
                           </li>
                           <li class="active"><a href="ourModels.php">Available Models</a></li>
-                          <li><a href="Alexa.php">Communicate With Alexa!</a></li>
+                          <li><a href="Alexa.php"class="active">Communicate With Alexa!</a></li>
                           <li>
                             <?php
                               if(isset($_SESSION['email'])){
