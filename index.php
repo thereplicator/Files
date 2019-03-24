@@ -59,6 +59,11 @@
                     <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                      <!-- d-lg-block -->
                     <ul class="site-menu js-clone-nav d-none">
+                      <?php
+                        if(isset($_SESSION['email'])){
+                          echo "<li>".$_SESSION['email']."</li>";
+                        }
+                        ?>
                       <li class="active">
                         <a href="index.php">Home</a>
                       </li>
