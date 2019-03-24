@@ -1,6 +1,7 @@
 <?php
 	session_start();
 
+//if the user is already logged we dont want him to able to access the login page again. if he does try to do so by insertig the link of the login page in the url, restrict by redirecting him to the home page
 	if (isset($_SESSION['email'])) {
 		header('location: index.php');
 	}
