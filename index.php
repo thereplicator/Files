@@ -64,13 +64,13 @@
                     <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                      <!-- d-lg-block -->
                     <ul class="site-menu js-clone-nav d-none">
-                      <li class="active">
-                        <?php
+                      <?php
 
-                        if (isset($_SESSION['email'])) {
-                          echo '<li><a href="ourModels.php">'.$_SESSION['email'].'</a></li>';
-                        }
-                        ?>
+                      if (isset($_SESSION['email'])) {
+                        echo '<li><a href="ourModels.php">'.$_SESSION['email'].'</a></li>';
+                      }
+                      ?>
+                      <li class="active">
                         <a href="index.php">Home</a>
                       </li>
                       <li><a href="ourModels.php">Available Models</a></li>
