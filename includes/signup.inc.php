@@ -32,8 +32,10 @@ if(isset($_POST['signup-submit'])){
           }else {
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
             $sql = "INSERT INTO users (FirstName , LastName , Email, pwd) VALUES ('$first' , '$last', '$email' , '$hashedPassword');";
+            session_start();
+            $_SESSION['email'] = $email;
             $getResults= sqlsrv_query($conn, $sql);
-            header("Location: ../signup.php?signupsuccess");
+            header("Location: ../index.php?signupsuccess");
             exit();
           }
         }
