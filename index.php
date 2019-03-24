@@ -65,6 +65,12 @@
                      <!-- d-lg-block -->
                     <ul class="site-menu js-clone-nav d-none">
                       <li class="active">
+                        <?php
+
+                        if (isset($_SESSION['email'])) {
+                          echo '<li><a href="ourModels.php">'.$_SESSION['email'].'</a></li>';
+                        }
+                        ?>
                         <a href="index.php">Home</a>
                       </li>
                       <li><a href="ourModels.php">Available Models</a></li>
