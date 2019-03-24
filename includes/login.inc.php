@@ -14,6 +14,9 @@ if(isset($_POST['login-submit'])){
     if ($resultCheck < 1){
       header("Location: ../login.php?login=NoSuchUser");
       exit();
+    }else{
+      header("Location: ../login.php?login=userExists");
+      exit();
     }
   }
 }else {
