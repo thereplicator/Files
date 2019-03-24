@@ -163,9 +163,9 @@
 
               ?>
 		              <tr>
-			                 <td><?php echo $Name;?></td>
-			                 <td><?php echo $GCode;?></td>
-			                 <td><?php echo $NumberOfPrints;?></td>
+			                 <td><?= $Name?></td>
+			                 <td><?= $GCode?></td>
+			                 <td><?= $NumberOfPrints?></td>
 		             </tr>
               <?php
               }
@@ -197,9 +197,13 @@
                       <li><a href="ourModels.php">Available Models</a></li>
                       <?php
                         if(isset($_SESSION['email'])){
-                          echo '<li><a href="#">Upload Model</a></li>';
+                      ?>
+                          <li><a href="#">Upload Model</a></li>
+                      <?php
                         }else {
-                          echo '<li><a href="signup.php">Create An Account</a></li>';
+                      ?>
+                          <li><a href="signup.php">Create An Account</a></li>
+                        <?php
                         }
                       ?>
                       <li><a href="#">Communicating With Alexa</a></li>
