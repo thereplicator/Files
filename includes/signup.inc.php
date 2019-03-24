@@ -16,7 +16,7 @@ if(isset($_POST['signup-submit'])){
       exit();
     }else {
       if(strlen($pwd) < 8){
-        header("Location: ../ourModels.php?error=PasswordMusteAtLeast8Characters");
+        header("Location: ../signup.php?error=PasswordMusteAtLeast8Characters");
         exit();
       }else {
         if(!preg_match("/^[a-zA-Z0-9!@#$%^&]*$/", $pwd)){
