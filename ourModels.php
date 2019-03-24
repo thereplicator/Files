@@ -201,7 +201,6 @@
                         }
                       ?>
                       <li><a href="#">Communicating With Alexa</a></li>
-                      <li><a href="#Founders">Meet The Founders!</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
