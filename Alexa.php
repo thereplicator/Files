@@ -135,7 +135,8 @@
 
          <div class="row">
            <div class="col-md-6 col-lg-6 mb-4" >
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/__lAYgAYvgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+             <!--the mobile version looks bad with this iframe. make it responsive -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/__lAYgAYvgc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            </div>
            <div class="col-md-5 col-lg-5 ml-auto">
              <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Meet  Echo</span><div style="text-align:center;"> Dot.</div></h2>
