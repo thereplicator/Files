@@ -242,7 +242,7 @@
               <p>
                 <?php
                   if(isset($_SESSION['email'])){
-                    echo 'You have already created an account. make sure you slice the 3D files into applicable gcode files. You can do that using any 3D Model Slicer such as <a href="https://ultimaker.com/en/products/ultimaker-cura-software " target="_blank"> Cura</a>';
+                    echo 'You have already created an account. Make sure you slice the 3D files into applicable gcode files. You can do that using any 3D Model Slicer such as <a href="https://ultimaker.com/en/products/ultimaker-cura-software " target="_blank"> Cura</a>';
                   }else {
                     echo 'In order to add the models of your choice, you will have to sign up first. Make sure to go to the <a href = "signup.php">Sign up page</a> and do that! Also make sure you slice the 3D files into applicable gcode files. You can do that using any 3D Model Slicer such as <a href="https://ultimaker.com/en/products/ultimaker-cura-software "  target="_blank"> Cura</a>';
                   }
@@ -266,7 +266,7 @@
             <div class="text-center p-4 item">
               <span style="font-size : 60px; color: #e1931b">3</span>
               <h2 class="h5 text-uppercase">Make sure your file is not already there </h2>
-              <p> To check the list of available models, please go to the <a href="ourModels.php"> "Available Models" </a>section. You have to make sure your file is not there! After that, you can finally upload your files and enjoy a universe of 3D printed models!</p>
+              <p> To check the list of available models, please go to the <a href="ourModels.php"> "Available Models" </a>section. You have to make sure your file is not there! After that, you can finally upload your files at <a href="#">"Upload Model"</a> and enjoy a universe of 3D printed models!</p>
             </div>
           </div>
 
