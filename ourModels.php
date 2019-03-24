@@ -141,12 +141,12 @@
     ?>
 
     <div class="limiter">
-		<div style = "background: #fff"class="container-table100">
+		<div style = "background: #fff" class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
 					<table class="table table-bordered">
 						<thead>
-							<tr style = "Background : #222"class="table100-head">
+							<tr style = "Background : #222" class="table100-head">
 								<th class="column1">Name</th>
 								<th class="column2">GCode</th>
 								<th class="column3">Number of Prints</th>
