@@ -131,7 +131,7 @@
         include_once 'includes/dbh.inc.php';
         $sql = "SELECT * FROM Models";
         $getResults= sqlsrv_query($conn, $sql);
-        echo ("Reading data from table" . PHP_EOL);
+        // echo ("Reading data from table" . PHP_EOL);
         if ($getResults == FALSE){
           echo (sqlsrv_errors());
         }
