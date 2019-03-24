@@ -61,7 +61,7 @@
                     <ul class="site-menu js-clone-nav d-none">
                       <?php
                         if(isset($_SESSION['email'])){
-                          echo "<li>".$_SESSION['email']."</li>";
+                          echo "<li>".$_SESSION['first']."</li>";
                         }
                         ?>
                       <li class="active">
