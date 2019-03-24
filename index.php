@@ -1,7 +1,7 @@
-<!-- <?php
-	// session_start();
+<?php
+	session_start();
 
-?> -->
+?>
 
 
 
@@ -128,6 +128,8 @@
               //   <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>';
               // }
               ?> -->
+              <a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
+              //   <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>
             </p>
           </div>
         </div>
