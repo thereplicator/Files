@@ -288,7 +288,13 @@
                   <ul class="list-unstyled">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="ourModels.php">Available Models</a></li>
-                    <li><a href="signup.php">Create An Account</a></li>
+                    <?php
+                      if(isset($_SESSION['email'])){
+                        echo '<li><a href="#">Upload Model</a></li>';
+                      }else {
+                        echo '<li><a href="signup.php">Create An Account</a></li>';
+                      }
+                    ?>
                     <li><a href="#">Communicating With Alexa</a></li>
                     <li><a href="#Founders">Meet The Founders!</a></li>
                   </ul>
