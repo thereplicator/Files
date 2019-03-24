@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>The Replicator - Sign Up</title>
+    <title>The Replicator - Log in</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -93,7 +93,7 @@
 
                            <div class="row form-group">
                              <div class="col-md-12">
-                               <button type="submit" value="" class="btn btn-primary px-4 py-2">Sign Up</button>
+                               <button type="submit" value="" class="btn btn-primary px-4 py-2">Log in</button>
 
                              </div>
                            </div>
@@ -122,33 +122,30 @@
       </div>
     </div>
 
+
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
-
           <div class="col-md-12 col-lg-8 mb-5">
-
-
-
-            <form action="#" class="p-5 bg-white">
+            <form action="includes/login.inc.php" class="p-5 bg-white">
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Email</label>
-                  <input type="email" id="email" class="form-control" placeholder="Email Address">
+                  <input type="email" id="email" class="form-control" name="email" placeholder="Email Address">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="font-weight-bold" for="email">Password</label>
-                  <input type="password" id="password" class="form-control" placeholder="Password">
+                  <input type="password" id="password" name="pwd"class="form-control" placeholder="Password">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <button type="submit" value="" class="btn btn-primary px-4 py-2">Sign In</button>
+                  <button type="submit" name="login-submit"value="" class="btn btn-primary px-4 py-2">Sign In</button>
                 </div>
               </div>
 
