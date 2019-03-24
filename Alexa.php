@@ -64,11 +64,11 @@
                           echo "<li>".$_SESSION['first']." ".$_SESSION['last']."</li>";
                         }
                         ?>
-                      <li class="active">
+                      <li>
                         <a href="index.php">Home</a>
                       </li>
                       <li><a href="ourModels.php">Available Models</a></li>
-                      <li><a href="Alexa.php">Communicate With Alexa!</a></li>
+                      <li class="active"> <a href="Alexa.php">Communicate With Alexa!</a></li>
                       <li>
                         <?php
                           if(isset($_SESSION['email'])){
