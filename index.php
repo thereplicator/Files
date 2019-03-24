@@ -67,14 +67,19 @@
                       <li>
                         <?php
                           if(isset($_SESSION['email'])){
-                            echo "<form class='' action='includes/logout.inc.php' method='post'>
-                                          <button type='submit'name='logout-submit'>Logout</button>
+                            echo "<form class='p-5 bg-white' action='includes/logout.inc.php' method='post'>
+                                          <div class='row form-group'>
+                                            <div class='col-md-12'>
+                                              <button type='submit' name='logout-submit' class='btn btn-primary px-4 py-2'>Log In</button>
+                                            </div>
+                                          </div>
                                         </form>";
                           }else {
-                            echo '<li><a href="signup.php">Create An Account</a></li>                        <li>
-                                                      <form action="#" class="p-5 bg-white">
+                            echo '<li><a href="signup.php">Create An Account</a></li>
+                             <li>
+                                <form action="#" class="p-5 bg-white">
 
-                                                        <div class="row form-group">
+                                                      <div class="row form-group">
                                                           <div class="col-md-12">
                                                             <label class="font-weight-bold" for="email">Email</label>
                                                             <input type="email" id="email" class="form-control" placeholder="Email Address">
