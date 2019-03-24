@@ -23,9 +23,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
+    <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/style.css">
 
   </head>
@@ -144,7 +143,7 @@
 		<div style = "background: #fff" class="container-table100">
 			<div class="wrap-table100">
 				<div class="table100">
-					<table class="table table-bordered">
+					<table>
 						<thead>
 							<tr style = "Background : #222" class="table100-head">
 								<th class="column1">Name</th>
