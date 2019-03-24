@@ -117,7 +117,7 @@
             <p class="regular-font-size">
               <?php
 
-              if (!isset($_SESSION['email'])) {
+              if (isset($_SESSION['email'])) {
                 echo '<a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
                 <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>';
               }
