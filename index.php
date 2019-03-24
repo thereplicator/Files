@@ -64,7 +64,9 @@
                       </li>
                       <?php
                         if(isset($_SESSION['email'])){
-                          echo '<li><a href="logout.inc.php">Log Out</a></li>';
+                          echo "<form class='' action='includes/logout.inc.php' method='post'>
+                                        <button type='submit'name='logout-submit'>Logout</button>
+                                      </form>";
                         }else {
                           echo '<li><a href="signup.php">Create An Account</a></li>';
                         }
