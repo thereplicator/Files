@@ -5,7 +5,7 @@ if(isset($_POST['login-submit'])){
   $email = $_POST['email'];
   $password = $_POST['pwd'];
   if(empty($email)  || empty($password)){
-    header("Location: ../index.php?error=emptyFields");
+    header("Location: ../login.php?error=emptyFields");
     exit();
   }else {
     $sql = "SELECT * FROM users WHERE Email='$email'";
