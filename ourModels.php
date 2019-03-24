@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -57,38 +60,53 @@
                     <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                      <!-- d-lg-block -->
                     <ul class="site-menu js-clone-nav d-none">
-                      <li >
+                      <?php
+                        if(isset($_SESSION['email'])){
+                          echo "<li>".$_SESSION['first']." ".$_SESSION['last']."</li>";
+                        }
+                        ?>
+                      <li class="active">
                         <a href="index.php">Home</a>
                       </li>
-                      <li class="active"><a href="ourModels.php">Available Models</a></li>
-                      <li><a href="signup.php">Create An Account</a></li>
-                        <li><a href="Alexa.php">Communicate With Alexa!</a></li>
+                      <li><a href="ourModels.php">Available Models</a></li>
+                      <li><a href="Alexa.php">Communicate With Alexa!</a></li>
                       <li>
-                        <form action="#" class="p-5 bg-white">
-
-                          <div class="row form-group">
-                            <div class="col-md-12">
-                              <label class="font-weight-bold" for="email">Email</label>
-                              <input type="email" id="email" class="form-control" placeholder="Email Address">
-                            </div>
-                          </div>
-
-                          <div class="row form-group">
-                            <div class="col-md-12">
-                              <label class="font-weight-bold" for="email">Password</label>
-                              <input type="password" id="password" class="form-control" placeholder="Password">
-                            </div>
-                          </div>
-
-                          <div class="row form-group">
-                            <div class="col-md-12">
-                              <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
-                            </div>
-                          </div>
-
-
-                        </form>
-                      </li>
+                        <?php
+                          if(isset($_SESSION['email'])){
+                            echo "<form class='p-5 bg-white' action='includes/logout.inc.php' method='post'>
+                                          <div class='row form-group'>
+                                            <div class='col-md-12'>
+                                              <button type='submit' name='logout-submit' class='btn btn-primary px-4 py-2'>Log Out</button>
+                                            </div>
+                                          </div>
+                                  </form>";
+                          }else {
+                            echo '<li>
+                            <a href="signup.php">Create An Account</a>
+                            </li>
+                             <li>
+                                <form action="#" class="p-5 bg-white">
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-bold" for="email">Email</label>
+                                      <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                  </div>
+                                  <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-bold" for="email">Password</label>
+                                      <input type="password" id="password" class="form-control" placeholder="Password">
+                                    </div>
+                                  </div>
+                                  <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
+                                    </div>
+                                  </div>
+                                  </form>
+                                  </li>';
+                          }
+                        ?>
                     </ul>
                   </div>
                 </nav>
