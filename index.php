@@ -73,33 +73,32 @@
                                               <button type='submit' name='logout-submit' class='btn btn-primary px-4 py-2'>Log Out</button>
                                             </div>
                                           </div>
-                                        </form>";
+                                  </form>";
                           }else {
-                            echo '<li><a href="signup.php">Create An Account</a></li>
+                            echo '<li>
+                            <a href="signup.php">Create An Account</a>
+                            </li>
                              <li>
                                 <form action="#" class="p-5 bg-white">
-
-                                                      <div class="row form-group">
-                                                          <div class="col-md-12">
-                                                            <label class="font-weight-bold" for="email">Email</label>
-                                                            <input type="email" id="email" class="form-control" placeholder="Email Address">
-                                                          </div>
-                                                        </div>
-
-                                                        <div class="row form-group">
-                                                          <div class="col-md-12">
-                                                            <label class="font-weight-bold" for="email">Password</label>
-                                                            <input type="password" id="password" class="form-control" placeholder="Password">
-                                                          </div>
-                                                        </div>
-
-                                                        <div class="row form-group">
-                                                          <div class="col-md-12">
-                                                            <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
-                                                          </div>
-                                                        </div>
-                                                      </form>
-                                                  </li>';
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-bold" for="email">Email</label>
+                                      <input type="email" id="email" class="form-control" placeholder="Email Address">
+                                    </div>
+                                  </div>
+                                  <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <label class="font-weight-bold" for="email">Password</label>
+                                      <input type="password" id="password" class="form-control" placeholder="Password">
+                                    </div>
+                                  </div>
+                                  <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <button type="submit" value="" class="btn btn-primary px-4 py-2">Log In</button>
+                                    </div>
+                                  </div>
+                                  </form>
+                                  </li>';
                           }
                         ?>
                     </ul>
