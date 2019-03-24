@@ -177,27 +177,41 @@
 	</div>
 
 
+
       <footer class="site-footer" style="background-image: url('images/baner.jpg');">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
               <h3 class="footer-heading mb-4 text-white">Replicator</h3>
               <p><i>We create new  possibilities for a world full of possibilities!</i></p>
-              <p><a href="index.php#aboutInfo" class="btn btn-primary pill text-white px-4">Read More</a></p>
+              <p><a href="#aboutInfo" class="btn btn-primary pill text-white px-4">Read More</a></p>
             </div>
             <div class="col-md-6">
               <div class="row">
                 <div class="col-md-6">
                   <h3 class="footer-heading mb-4 text-white">Quick Menu</h3>
-                  <ul class="list-unstyled">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="ourModels.php">Available Models</a></li>
-                    <li><a href="signup.php">Create An Account</a></li>
-                    <li><a href="#">Communicating With Alexa</a></li>
-                    <li><a href="#Founders">Meet The Founders!</a></li>
-                  </ul>
+                    <ul class="list-unstyled">
+                      <li><a href="index.php">Home</a></li>
+                      <li><a href="ourModels.php">Available Models</a></li>
+                      <?php
+                        if(isset($_SESSION['email'])){
+                          echo '<li><a href="#">Upload Model</a></li>';
+                        }else {
+                          echo '<li><a href="signup.php">Create An Account</a></li>';
+                        }
+                      ?>
+                      <li><a href="#">Communicating With Alexa</a></li>
+                      <li><a href="#Founders">Meet The Founders!</a></li>
+                    </ul>
                 </div>
-
+                <div class="col-md-6">
+                  <h3 class="footer-heading mb-4 text-white">&nbsp;</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                    </ul>
+                </div>
               </div>
             </div>
           </div>
