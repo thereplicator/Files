@@ -1,6 +1,5 @@
 <?php
 	session_start();
-
 ?>
 
 
@@ -22,11 +21,7 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/animate.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-
-
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
     <link rel="stylesheet" href="css/aos.css">
@@ -64,17 +59,19 @@
                     <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
                      <!-- d-lg-block -->
                     <ul class="site-menu js-clone-nav d-none">
-                      <!-- <?php
-
-                      // if (isset($_SESSION['email'])) {
-                      //   echo '<li>'.$_SESSION['first'].' '.$_SESSION['last']'</li>';
-                      // }
-                      ?> -->
                       <li class="active">
                         <a href="index.php">Home</a>
                       </li>
+                      <?php
+                        if(isset($_SESSION['email'])){
+                          echo "<form class='' action='includes/logout.inc.php' method='post'>
+                                        <button type='submit'name='logout-submit'>Logout</button>
+                                      </form>";
+                        }else {
+                          echo '<li><a href="signup.php">Create An Account</a></li>';
+                        }
+                      ?>
                       <li><a href="ourModels.php">Available Models</a></li>
-                      <li><a href="signup.php">Create An Account</a></li>
                       <li><a href="Alexa.php">Communicate With Alexa!</a></li>
                       <li>
                         <li>
@@ -121,13 +118,6 @@
             <h1 class="mb-4">Connect to Alexa and print 3D models</h1>
             <p class="mb-5"></p>
             <p class="regular-font-size">
-              <!-- <?php
-
-              // if (!isset($_SESSION['email'])) {
-              //   echo '<a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
-              //   <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>';
-              // }
-              ?> -->
               <a href="login.php" class="btn btn-primary px-4 py-3 text-uppercase">Log In</a>
               //   <a href="signup.php" class="btn btn-primary px-4 py-3 text-uppercase">Sign Up</a>
             </p>
