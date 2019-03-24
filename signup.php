@@ -2,6 +2,7 @@
 	session_start();
 
 //if the user is already logged we dont want him to able to access the signup page again. if he does try to do so by insertig the link of the signup page in the url, restrict by redirecting him to the home page
+//if you try this url while logged in ( http://thereplicator.azurewebsites.net/signup.php ), you will be redirected to index
 	if (isset($_SESSION['email'])) {
 		header('location: index.php');
 	}
