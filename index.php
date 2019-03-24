@@ -67,7 +67,7 @@
                       <?php
 
                       if (isset($_SESSION['email'])) {
-                        echo '<li>'.$_SESSION['fullname'].'</li>';
+                        echo '<li>'.$_SESSION['email'].'</li>';
                       }
                       ?>
                       <li class="active">
