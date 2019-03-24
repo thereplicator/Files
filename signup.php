@@ -130,6 +130,7 @@
           <div class="col-md-12 col-lg-8 mb-5">
 
           <form action="includes/signup.inc.php" class="p-5 bg-white" method="POST">
+
             <div class="row form-group">
               <div class="col-md-12">
                 <label class="font-weight-bold">Firstname</label>
@@ -165,6 +166,7 @@
                 <button type="submit" name = "signup-submit"class="btn btn-primary px-4 py-2">Sign Up</button>
               </div>
             </div>
+						
             </form>
           </div>
         </div>
