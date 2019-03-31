@@ -9,7 +9,7 @@ if(isset($_POST['addModel-submit'])){
     header("Location: ../addModel.php?error=emptyFields");
     exit();
   }else {
-    if(!preg_match("/^[a-zA-Z]*$/", $name)){
+    if(!preg_match("/^[a-zA-Z]*$/", $name)){ 
       header("Location: ../addModel.php?error=invalidName");
       exit();
     }else {
