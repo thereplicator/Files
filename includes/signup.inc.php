@@ -12,7 +12,7 @@ if(isset($_POST['signup-submit'])){
     exit();
   }else {
     if((!preg_match("/^[a-zA-Z]*$/", $first)) || !preg_match("/^[a-zA-Z]*$/", $last)){
-      header("Location: ../signup.php?error=ivalidFirstameOrLastame");
+      header("Location: ../signup.php?error=InvalidFirstameOrLastame");
       exit();
     }else {
       if(strlen($pwd) < 8){
@@ -20,7 +20,7 @@ if(isset($_POST['signup-submit'])){
         exit();
       }else {
         if(!preg_match("/^[a-zA-Z0-9!@#$%^&]*$/", $pwd)){
-          header("Location: ../signup.php?error=IvalidPassword");
+          header("Location: ../signup.php?error=InvalidPassword");
           exit();
         }else {
           $checkUserTakenSQl = "SELECT * FROM users WHERE Email='$email'";

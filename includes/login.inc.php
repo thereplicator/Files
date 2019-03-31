@@ -19,9 +19,13 @@ if(isset($_POST['login-submit'])){
       $hash = sqlsrv_query($conn, "SELECT pwd FROM users WHERE Email='$email'");
       if (password_verify($password, $hash[0])) {
         // Success!
+        header("Location: ../index.php?loginsuccess");
+        exit();
       }
       else {
         // Invalid credentials
+        header("Location: ../login.php?login=NoSuchUser");
+        exit();
       }
       
       header("Location: ../login.php?login=userExists");
