@@ -15,6 +15,15 @@ if(isset($_POST['login-submit'])){
       header("Location: ../login.php?login=NoSuchUser");
       exit();
     }else{
+      //checking password
+      $hash = sqlsrv_query($conn, "SELECT pwd FROM users WHERE Email='$email'");
+      if (password_verify($password, $hash[0])) {
+        // Success!
+      }
+      else {
+        // Invalid credentials
+      }
+      
       header("Location: ../login.php?login=userExists");
       exit();
     }
@@ -23,3 +32,5 @@ if(isset($_POST['login-submit'])){
   header("Location: ../login.php?illegalEntry");
   exit();
 }
+
+?>
