@@ -152,7 +152,7 @@
         <div class="row justify-content-center">
           <div class="col-7">
             <p><?php
-            echo "current PHP version: " . phpversion();
+            // echo "current PHP version: " . phpversion();
             ?>It is almost impossible to believe what technology has achieved so far. Starting with the microphone invention in the 19th century, reaching to Smartphones and Virtual reality nowadays. We really made a huge leap! Our real concern here, in "The Replicator", is the next level. Great technologies had really impacted our lives...One of which is the 3D printing technology. Yet, we decided to make it more elegant and user-friendly using Alexa!You can now access stored models and 3D print them with the use of a raspberry pi.
 			In case you want to add a certain 3D model of your choice, you can sign up here, add your specified models,and proceed with the printing. To upload your models, Please check <a href ="#modelGuide"> the following guidelines for a detailed walkthrough. </a> </p>
 

@@ -75,7 +75,8 @@
                        </li>
                          <li><a href="Alexa.php">Communicate With Alexa!</a></li>
                        <li>
-                         <form action="#" class="p-5 bg-white">
+
+                         <form action="includes/login.inc.php" class="p-5 bg-white">
 
                            <div class="row form-group">
                              <div class="col-md-12">
