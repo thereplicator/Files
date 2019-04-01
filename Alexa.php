@@ -165,11 +165,8 @@ Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most po
 						 </ul> -->
 
 							 	<p>You can see in the screenshots below, examples of a Human-Alexa interaction. </p>
-								<a> <img src="images/test1.png" alt="Image" ></a>
-								<a> <img src="images/test2.png" alt="Image" ></a>
-
-
-
+								<!-- <a class="d-block mb-3 thumbnail"> <img src="images/test1.png" alt="Image" class="img-fluid"></a>
+								<a class="d-block mb-3 thumbnail" > <img style="float: right;"src="images/test2.png" alt="Image" class="img-fluid"></a> -->
            </div>
 
          </div>
