@@ -159,13 +159,16 @@ Enter the 2018 Echo Dot, which is sure to continue the trend as Amazon's most po
            <div class="col-md-5 col-lg-5 mr-auto order-md-1">
              <h2 class="font-weight-bold text-uppercase display-3"><span class="d-block">Start The <div style="text-align:center;"> Replicator.</div></span> </h2> <br>
 
+						 <!-- <li style="list-style-type:disc;">-->
+						 <!-- <ul style = "margin-left: 50px">
+							 <li></li>
+						 </ul> -->
 
-               <!-- <li style="list-style-type:disc;">--><p>
+							 	<p>You can see in the screenshots below, examples of a Human-Alexa interaction. </p>
+								<a> <img src="images/test1.png" alt="Image" ></a>
+								<a> <img src="images/test2.png" alt="Image" ></a>
 
-							  You can see in the screenshots below, examples of a Human-Alexa interaction. </p>
-                  <!-- <ul style = "margin-left: 50px">
-                    <li></li>
-                  </ul> -->
+
 
            </div>
 
