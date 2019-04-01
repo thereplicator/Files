@@ -179,44 +179,44 @@
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/MarwanNour.jpeg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Marwan</span>Nour</a></h3>
+              <a class="d-block mb-3 thumbnail"><img src="images/MarwanNour.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a><span>Marwan</span>Nour</a></h3>
               <!-- <p>Business Consultant in Google</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/HadiHaidar.jpeg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Hadi</span>Haidar</a></h3>
+              <a  class="d-block mb-3 thumbnail"><img src="images/HadiHaidar.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a><span>Hadi</span>Haidar</a></h3>
               <!-- <p>Business Consultant in Facebook</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/Shatilov.jpeg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Mohammad N.</span> Chatila</a></h3>
+              <a class="d-block mb-3 thumbnail"><img src="images/MohammadShatila.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a><span>Mohammad N.</span> Chatila</a></h3>
               <!-- <p>Business Consultant in Medium</p> -->
             </div>
           </div>
 
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/OmarRachidi.jpeg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Omar</span> Al Rachidi</a></h3>
+              <a class="d-block mb-3 thumbnail"><img src="images/OmarRachidi.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a ><span>Omar</span> Al Rachidi</a></h3>
               <!-- <p>Business Consultant in Slack</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/person_5.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Bryan</span> Forster</a></h3>
+              <a class="d-block mb-3 thumbnail"><img src="images/MohammadHammoud.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a><span>Mohammad</span> Hammoud</a></h3>
               <!-- <p>Business Consultant in WordPress</p> -->
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="speaker text-left">
-              <a href="speaker-single.html" class="d-block mb-3 thumbnail"><img src="images/person_6.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="heading mb-0"><a href="#"><span>Matt</span> Nelson</a></h3>
+              <a class="d-block mb-3 thumbnail"><img src="images/MohammadHoudeib.jpeg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-0"><a><span>Mohammad </span> Houdeib</a></h3>
               <!-- <p>Business Consultant in Evernote</p> -->
             </div>
           </div>
